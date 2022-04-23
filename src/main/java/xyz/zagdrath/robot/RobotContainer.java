@@ -4,7 +4,7 @@
 
 package xyz.zagdrath.robot;
 
-// RomiBase 
+// RomiBase imports
 import xyz.zagdrath.robot.commands.*;
 import xyz.zagdrath.robot.subsystems.*;
 
@@ -20,7 +20,7 @@ public class RobotContainer {
     private final DrivetrainSubsystem drivetrainSubsystem = new DrivetrainSubsystem();
 
     // Commands
-    private final DrivetrainCommand drivetrainCommand = new DrivetrainCommand();
+    private final DrivetrainCommand drivetrainCommand = new DrivetrainCommand(drivetrainSubsystem);
 
     public OI operatorInterface;
 

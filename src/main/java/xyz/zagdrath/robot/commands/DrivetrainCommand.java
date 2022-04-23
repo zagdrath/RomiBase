@@ -7,10 +7,13 @@ package xyz.zagdrath.robot.commands;
 // WPILib imports
 import edu.wpi.first.wpilibj2.command.CommandBase;
 
+// RomiBase imports
+import xyz.zagdrath.robot.subsystems.DrivetrainSubsystem;
+
 public class DrivetrainCommand extends CommandBase {
 
-  public DrivetrainCommand() {
-    // Use addRequirements() here to declare subsystem dependencies.
+  public DrivetrainCommand(DrivetrainSubsystem drivetrainSubsystem) {
+    addRequirements(drivetrainSubsystem);
   }
 
   // Called when the command is initially scheduled.
